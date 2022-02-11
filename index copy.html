@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercise</title>
+    <meta name="description" content="A simple HTML page">
+<style>
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.heading {
+  padding: 5% 15%;
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-flow: column;
+}
+
+.info-title {
+  font-size: 100px;
+  font-weight: 100;
+  text-align: center;
+  grid-column: 2;
+  grid-row: 1 / 2;
+}
+
+@media only screen and (max-width: 1100px) {
+  .heading {
+    background-color: black;
+    display: block;
+    color: white;
+    padding: 5% 15%;
+    text-align: center;
+  }
+
+  .info-title {
+    font-size: 100px;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .heading img {
+    border: 10px solid white;
+    border-radius: 5%;
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .info {
+    text-align: center;
+  }
+}
+
+.heading img {
+  border: 10px solid white;
+  border-radius: 5%;
+  margin-right: 20px;
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+.info {
+  text-align: center;
+  grid-column: 2;
+  grid-row: 2 / 3;
+}
+
+.info button {
+  margin-top: 20px;
+  background-color: rgb(237, 68, 124);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  height: 30px;
+  width: 100px;
+}
+
+.body {
+  background-color: purple;
+  padding: 5%;
+}
+
+.body-title {
+  font-size: 30px;
+  font-weight: 100;
+  color: white;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.card {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.card-image {
+  background-color: white;
+  border-radius: 25px 0 0 25px;
+  padding: 50px;
+}
+
+.card-image img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.card-container {
+  background-color: rgb(58, 2, 84);
+  border-radius: 0 25px 25px 0;
+  color: white;
+  padding: 2rem 3rem;
+}
+
+.card-container h3 {
+  margin-bottom: 15px;
+}
+
+.card-container .date {
+  text-align: right;
+}
+
+.cards-control {
+  text-align: center;
+}
+
+.cards-control button {
+  border-radius: 15px;
+  height: 50px;
+  width: 120px;
+}
+</style>
+  </head>
+  <!-- The rest of your HTML code is here -->
+<body>
+	<div class="heading">
+		<h1 class="info-title">MY APP</h1>
+		<img
+			src="https://i.pinimg.com/564x/ab/5b/1d/ab5b1d9c1bb06519c965dc87bffb0e5a.jpg"
+			alt="header rocket"
+		/>
+
+		<div class="info">
+			<p>
+				Lorem ipsum is placeholder text commonly used in the graphic, print,
+				and publishing industries for previewing layouts and visual mockups.
+			</p>
+			<button>Test Now</button>
+		</div>
+	</div>
+
+	<div class="body">
+		<div class="body-title">
+			<h2>My List</h2>
+		</div>
+
+		<div class="cards-container">
+			<div class="card">
+				<div class="card-image">
+					<img
+						src="https://www.svgrepo.com/show/26996/avatar.svg"
+						alt="alt-avatar"
+					/>
+				</div>
+				<div class="card-container">
+					<h3>My First Thing</h3>
+					<p>
+						Lorem ipsum is placeholder text commonly used in the graphic,
+						print, and publishing industries for previewing layouts and
+						visual mockups.
+					</p>
+					<div class="date">
+						<p>01/01/2020</p>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-image">
+					<img
+						src="https://www.svgrepo.com/show/26996/avatar.svg"
+						alt="alt-avatar"
+					/>
+				</div>
+				<div class="card-container">
+					<h3>My Second Thing</h3>
+					<p>
+						Lorem ipsum is placeholder text commonly used in the graphic,
+						print, and publishing industries for previewing layouts and
+						visual mockups.
+					</p>
+					<div class="date">
+						<p>01/01/2020</p>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-image">
+					<img
+						src="https://www.svgrepo.com/show/26996/avatar.svg"
+						alt="alt-avatar"
+					/>
+				</div>
+				<div class="card-container">
+					<h3>My First Thing</h3>
+					<p>
+						Lorem ipsum is placeholder text commonly used in the graphic,
+						print, and publishing industries for previewing layouts and
+						visual mockups.
+					</p>
+					<div class="date">
+						<p>01/01/2020</p>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-image">
+					<img
+						src="https://www.svgrepo.com/show/26996/avatar.svg"
+						alt="alt-avatar"
+					/>
+				</div>
+				<div class="card-container">
+					<h3>My Second Thing</h3>
+					<p>
+						Lorem ipsum is placeholder text commonly used in the graphic,
+						print, and publishing industries for previewing layouts and
+						visual mockups.
+					</p>
+					<div class="date">
+						<p>01/01/2020</p>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-image">
+					<img
+						src="https://www.svgrepo.com/show/26996/avatar.svg"
+						alt="alt-avatar"
+					/>
+				</div>
+				<div class="card-container">
+					<h3>My First Thing</h3>
+					<p>
+						Lorem ipsum is placeholder text commonly used in the graphic,
+						print, and publishing industries for previewing layouts and
+						visual mockups.
+					</p>
+					<div class="date">
+						<p>01/01/2020</p>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-image">
+					<img
+						src="https://www.svgrepo.com/show/26996/avatar.svg"
+						alt="alt-avatar"
+					/>
+				</div>
+				<div class="card-container">
+					<h3>My Second Thing</h3>
+					<p>
+						Lorem ipsum is placeholder text commonly used in the graphic,
+						print, and publishing industries for previewing layouts and
+						visual mockups.
+					</p>
+					<div class="date">
+						<p>01/01/2020</p>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-image">
+					<img
+						src="https://www.svgrepo.com/show/26996/avatar.svg"
+						alt="alt-avatar"
+					/>
+				</div>
+				<div class="card-container">
+					<h3>My First Thing</h3>
+					<p>
+						Lorem ipsum is placeholder text commonly used in the graphic,
+						print, and publishing industries for previewing layouts and
+						visual mockups.
+					</p>
+					<div class="date">
+						<p>01/01/2020</p>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-image">
+					<img
+						src="https://www.svgrepo.com/show/26996/avatar.svg"
+						alt="alt-avatar"
+					/>
+				</div>
+				<div class="card-container">
+					<h3>My Second Thing</h3>
+					<p>
+						Lorem ipsum is placeholder text commonly used in the graphic,
+						print, and publishing industries for previewing layouts and
+						visual mockups.
+					</p>
+					<div class="date">
+						<p>01/01/2020</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cards-control">
+			<button>Test Now</button>
+		</div>
+	</div>
+</body>
+</html>
+
